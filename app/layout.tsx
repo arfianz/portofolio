@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Oswald } from "next/font/google";
 import localfont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import GrainEffect from "@/components/visualEffects/grain-effects";
 
 const mainFont = Bricolage_Grotesque({ subsets: ["latin"] });
 const secondaryFont = Oswald({
@@ -33,6 +34,7 @@ export default function RootLayout({
           localFont.variable
         )}
       >
+        <GrainEffect />
         {children}
       </body>
     </html>
