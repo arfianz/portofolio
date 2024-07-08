@@ -4,7 +4,9 @@ import localfont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import GrainEffect from "@/components/visualEffects/grain-effects";
+import { Cursor } from "@/components/cursor/cursor";
 
+// Fonts
 const mainFont = Bricolage_Grotesque({ subsets: ["latin"] });
 const secondaryFont = Oswald({
   subsets: ["latin"],
@@ -15,6 +17,7 @@ const localFont = localfont({
   variable: "--font-local",
 });
 
+// Metadata
 export const metadata: Metadata = {
   title: "Arfian",
   description: "Arfian official portfolio",
@@ -35,6 +38,7 @@ export default function RootLayout({
         )}
       >
         <GrainEffect />
+        <Cursor color="#fff" />
         {children}
       </body>
     </html>
