@@ -1,3 +1,4 @@
+import exp from "constants";
 import { FC } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
@@ -5,7 +6,7 @@ interface CursorProps {
   color: string;
 }
 
-export const Cursor: FC<CursorProps> = ({ color }) => {
+const Cursor: FC<CursorProps> = ({ color }) => {
   return (
     <AnimatedCursor
       innerSize={8}
@@ -23,3 +24,5 @@ export const Cursor: FC<CursorProps> = ({ color }) => {
     />
   );
 };
+
+export default Cursor;
