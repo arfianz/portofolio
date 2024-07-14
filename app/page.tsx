@@ -1,6 +1,7 @@
 "use client";
 
 import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
+import FeaturedSection from "@/sections/featured";
 import LandingSection from "@/sections/landing";
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
       {() => (
         <div>
           <div>
-            <LandingSection />
+            {/* <LandingSection /> */}
+            <FeaturedSection />
           </div>
         </div>
       )}
