@@ -13,11 +13,9 @@ export default function Home() {
       resolution="2048"
     >
       {() => (
-        <div>
-          <div>
-            {/* <LandingSection /> */}
-            <FeaturedSection />
-          </div>
+        <div className="pb-8">
+          {/* <LandingSection /> */}
+          <FeaturedSection />
         </div>
       )}
     </WaterWaveWrapper>
