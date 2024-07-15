@@ -8,12 +8,15 @@ interface VideoProps {
 
 const Video: FC<VideoProps> = ({ video, active }) => {
   useEffect(() => {
-    if (videoRef.current) {
+    const videoElement = videoRef.current;
+    if (videoElement) {
       if (active) {
-        videoRef.current.play();
+        videoElement.play().catch((error) => {
+          console.warn("Video play was prevented:", error);
+        });
       } else {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
+        videoElement.pause();
+        videoElement.currentTime = 0;
       }
     }
   }, [active]);
