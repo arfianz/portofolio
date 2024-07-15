@@ -1,4 +1,5 @@
 import FeatureCard from "@/components/cards/feature-card";
+import ExpandableFeatured from "@/components/expandables/expandable-featured";
 import Heading from "@/components/heading/heading";
 
 import { featuredData } from "@/data";
@@ -17,6 +18,9 @@ export default function FeaturedSection() {
         tag={MainFeature.tag}
         video={MainFeature.video}
       />
+      <div className="mt-24">
+        <ExpandableFeatured />
+      </div>
     </div>
   );
 }
